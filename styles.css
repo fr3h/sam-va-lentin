@@ -1,0 +1,84 @@
+body {
+    background-color: #FFD9EC; /* Un rosa pastel de fondo */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXFtODg2cTJ3dmY0MHpicXpxZXc2aXoyNmhqOTV6b3E4MzNvdmhoeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rxYG6rKr0iQla/giphy.gif");
+    background-repeat: repeat;
+  }
+  
+  .contenedor {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .contenedor h1 {
+    font-size: 3em;
+    color: #E500A4;
+    text-shadow: 2px 2px #ff00ff;
+  }
+  
+  .collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  .collage img {
+    width: 200px;
+    height: auto;
+    border: 3px dashed #E500A4;
+    padding: 5px;
+    background-color: #fff;
+  }
+  
+  /* Mensaje secreto */
+  #mensaje-secreto {
+    margin-top: 20px;
+    background-color: #ffffaa;
+    border: 2px solid #000;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .oculto {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  button {
+    font-size: 1em;
+    color: #fff;
+    background-color: #E500A4;
+    border: 2px solid #ff00ff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+  }
+  
+  button:hover {
+    background-color: #ff00ff;
+  }
+  
+  marquee {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #ff0055;
+    font-weight: bold;
+  }
+
+  .blink {
+    animation: parpadeo 1s infinite alternate;
+  }
+  
+  @keyframes parpadeo {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
